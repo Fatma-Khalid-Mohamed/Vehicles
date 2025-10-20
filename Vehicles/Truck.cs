@@ -9,8 +9,19 @@ namespace vehicles
     //child(type) of vehicles
     internal class Truck : Vehicles
     {
-        string TruckColor;
-
+      
+        private string truckColor ;
+        public string TruckColor
+        {
+            get
+            {
+                return truckColor;
+            }
+            set
+            {
+                truckColor = value;
+            }
+        }
         public Truck()
         {
             RentelPrice = 1000;
